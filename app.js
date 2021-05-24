@@ -6,7 +6,7 @@ const app = express();
 
 
 //connect to the mongoose db
-mongoose.connect("mongodb://localhost/ToDo_List", { //ToDo_List:db 
+mongoose.connect(process.env.SCOUT_KEY || "mongodb://localhost/ToDo_List", { //ToDo_List:db 
 
     useNewUrlParser: true,
     useUnifiedTopology :true
