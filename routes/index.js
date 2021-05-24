@@ -8,7 +8,7 @@ const Todo = require("../models/Todo");
 //routes will be here...
 
 router.get("/", (req, res) => {//<------Main GET
-    const allTodo = await Todo.find();
+    const allTodo = Todo.find();
     res.render("index", {todo: allTodo})
 })
 
