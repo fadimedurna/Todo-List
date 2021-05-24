@@ -9,7 +9,6 @@ const Todo = require("../models/Todo");
 
 router.get("/", async(req, res) => {//<------Main GET
     const allTodo = await Todo.find();
-    res.send("Working!!")
     res.render("index", {todo: allTodo})
 })
 
