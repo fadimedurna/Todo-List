@@ -27,7 +27,7 @@ app.use(require('./routes/todo'));
 
 
 //server configurations...
-PORT=3000;
+PORT= process.env.PORT || 3000;
 
 app.listen(PORT, () => {
     console.log(`Server started listening on port: ${PORT}`);
