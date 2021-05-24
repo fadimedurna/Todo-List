@@ -20,12 +20,10 @@
     <ul class="list-group my-5"> <!--my:margin, y axis-->
 
         <% todo.forEach(todos => { %>
-
-            <li class="list-group-item"><%= todos.todo %> 
-                <a href="/delete/todo/<%= todos._id %>"
+            <li class="list-group-item"><%= todos.todo %> <a href="/delete/todo/<%= todos._id %>"
                     class="btn btn-danger btn-sm">Delete</a></li>
-
-        <% }) %> 
+            <% }) %>
+    
 
     </ul>
 
