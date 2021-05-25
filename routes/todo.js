@@ -27,7 +27,7 @@ router
         Todo.deleteOne({ _id })
         .then(() => {
             
-            console.log("Deleted Todo Successfully!");
+            console.log("Todo Deleted Successfully!");
             res.redirect("/"); //redirecting user to homepage
         
         })
