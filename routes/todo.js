@@ -14,7 +14,7 @@ router
         newTodo.save()
         .then(() => { 
             //res.json({msg: "User Added Successfully!"})
-            console.log("Todo added successfully!");
+            console.log("Todo Added Successfully!");
             res.redirect("/"); //redirecting user to homepage
 
         }).catch((err) => console.log(err))
